@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Green Computing</title>
+    <style>
+      .container{
+        min-height:100vh;
+        min-width:100%;
+        margin:0;
+        padding:0;
+      }
+      #logo-text {
+        margin-top:12vh;
+        font-family:comic sans ms;
+        font-size: 100px;
+        font-weight:bold;
+    
+    
+      }
+      .text{
+        background:#f2f2f2;
+      }
+     img{
+      max-width:100%;
+     }
+      .custom-shape-divider-top-1671321603 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotateX(180deg);
+      }
+    
+    .custom-shape-divider-top-1671321603 svg {
+        position: relative;
+        display: block;
+        width: calc(200% + 1.3px);
+        height: 189px;
+        
+    
+      
+    }
+
+  .centered {
+    width:90%;
+    margin:auto;
+    padding-top:10px;
+    overflow-y: scroll;
+    max-height: 95%;
+
+  }
+  .centered::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 4px;
+}
+.centered{
+    scrollbar-width: thin;
+    scrollbar-color: #003d60 #009eb5;
+}
+.centered::-webkit-scrollbar-track {
+    background:#003d60;
+    border-radius: 3px;
+}
+.centered::-webkit-scrollbar-thumb {
+    background-color: #009eb5;
+    border-radius: 12px;
+    border: 3px solid #009eb5;
+    border-radius: 4px;
+}
+
+@font-face
+{
+    font-family: 'mandatory-plaything-Regular';
+  src: url('mandatory-plaything-Regular.eot');
+  src: url('mandatory-plaything-Regular.eot?#') format('embedded-opentype'),
+      url('mandatory-plaything-Regular.woff') format('woff'),
+      url('mandatory-plaything-Regular.ttf') format('truetype');
+}
+ h1, h2,h3,h4{
+  font-family: 'mandatory-plaything-Regular';
+}
+
+    .tablet{
+      background-color: 	 #f2f2f2;
+      display: flex;
+      margin-top:4%;
+      justify-content:center;
+      border-top: 15px solid #003d60 !important;
+      border-bottom: 15px solid #003d60 !important;
+      border-left:5px solid #003d60 !important;
+      border-right:5px solid #003d60 !important;
+      border-radius: 6px;
+      width:90%;
+      max-height: 90vh;
+      box-shadow: 0px 0px 12px #000000;
+    }
+    body{
+      background-color:#003d60;
+      max-width:100%;
+      
+    }
+    
+    .wave{
+      animation: wave 10s -3s linear infinite;
+      animation-timing-function: ease-in-out;
+      transform: translate3d(0, 0, 0);   
+       fill: #008ab7;
+    
+    }
+    .wave:nth-of-type(2) {
+      animation: wave 18s linear reverse infinite;
+      animation-timing-function: ease-in-out;
+      fill: #00aa99;
+    }
+    
+    .wave:nth-of-type(3) {
+      animation: wave 20s -1s linear infinite;
+      animation-timing-function: ease-in-out;
+      fill: #009eb5;
+    }
+    @keyframes wave {
+      0% {transform: translateX(0);}
+      50% {transform: translateX(-50%);}
+      100% {transform: translateX(0%);}
+    }
+    .slide {
+      display: none;
+      width: 100%;
+      height: 100%;
+     
+    }
+    .slide>img{
+      width:50%;
+      height:40%;
+      border-radius:6px;
+    }
+.slideshow-container{
+  padding:20px;
+  border-radius:6px;
+  background-color:rgba(0, 170, 153, 0.5);
+  width:85%;
+  margin:auto;
+}
+    /* Style the dots */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: rgba(0, 61, 96, 0.5);
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    /* Style the active dot */
+    .active, .dot:hover {
+      background-color: rgba(0, 61, 96, 1);
+    }
+    *{
+      user-select:none;
+    }
+    .logoimg{
+      animation: float 3s ease-out infinite;
+      z-index:-1
+    }
+    @keyframes float {
+      50% {
+        transform: translate(0, 20px);
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    <div class="custom-shape-divider-top-1671321603">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path class="wave" d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+          <path class="wave" d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+          <path class="wave" d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+      </svg>
+  </div>
+  <br/>
+  <br/>
+
+      <div class="d-flex justify-content-center">
+        <img src="greencomplogoboat.png" class="logoimg">
+
+      </div>
+    </div>
+ 
+    <div class="container" style="background-color:#009eb5;">
+
+    <br/>
+    <br/>
+    <div class="d-flex justify-content-center">
+      
+   <div class="tablet">
+    <div class="centered">
+<h1>Green Computing</h1>
+
+<div class="slideshow-container">
+
+  <div class="slide">
+
+    <h4>What is green computing?</h4>
+    <img src="green.jpg" alt="">
+    <p>Green computing refers to the design, use, disposal, and recycling of computers and related devices in an environmentally responsible way. The goal of green computing is to minimize the negative environmental impact of computing activities, such as energy consumption and electronic waste, while still meeting the needs of users.</p>
+  </div>
+  <div class="slide">
+
+    <h4>Energy-Efficient Hardware</h4>
+    <img src="eeff.jpg" alt="">
+    <p>One way to implement green computing is by choosing computer hardware that is designed to be energy efficient. This includes laptops, monitors, and servers. Using energy-efficient hardware can reduce energy consumption and carbon emissions.</p>
+  </div>
+
+  
+  <div class="slide">
+    <h4>Virtualization</h4>
+    <img src="virtualization.jpg" alt="">
+    <p>Virtualization technologies allow multiple servers to be consolidated onto a single physical machine. This can reduce energy consumption and hardware needs, contributing to green computing practices.</p>
+  </div>
+
+  <div class="slide">
+    <h4>Cloud Computing</h4>
+    <img src="cloud.png" alt="">
+    <p>Storing data and running applications in the cloud can reduce the need for physical hardware and energy consumption. This can be a sustainable alternative to traditional computing practices.</p>
+  </div>
+
+
+  <div class="slide">
+    <h4>Recycling and Disposal</h4>
+    <img src="recycle.jpg" alt="">
+    <p>Properly disposing of old or unused computers and other electronic devices is important for reducing electronic waste and protecting the environment. Recycling programs and e-waste facilities can help to properly dispose of these items.</p>
+  </div>
+
+  <div class="slide">
+    <h4>Power Management</h4>
+    <img src="power.jpg" alt="">
+    <p>Enabling power management features on computers and other devices can help to reduce energy consumption when they are not in use. This can be a simple and effective way to contribute to green computing practices.</p>
+  </div>
+  <div style="text-align:center">
+    <span class="dot" onclick="showSlide(0)"></span> 
+    <span class="dot" onclick="showSlide(1)"></span> 
+    <span class="dot" onclick="showSlide(2)"></span> 
+    <span class="dot" onclick="showSlide(3)"></span> 
+    <span class="dot" onclick="showSlide(4)"></span> 
+    <span class="dot" onclick="showSlide(5)"></span> 
+  </div>
+</div>
+<p>By adopting these and other green computing practices, individuals and organizations can play a role in reducing the environmental impact of computing activities.</p>
+
+<p>Green computing is an important consideration in today's world, where the use of computers and other electronic devices is increasing rapidly and their environmental impact is becoming more significant. The energy consumed by these devices, as well as the materials used in their production and disposal, can have negative impacts on the environment. In addition, the production and disposal of electronic waste can contribute to pollution and other environmental problems.</p>
+<p>To address these issues, green computing focuses on reducing the environmental impact of computing activities through a variety of measures. These measures may include the use of energy-efficient hardware and software, the implementation of virtualization technologies, the adoption of cloud computing, and the proper recycling and disposal of electronic devices.</p>
+<p>In addition to reducing energy consumption and electronic waste, green computing can also help to reduce the costs associated with computing activities. For example, using energy-efficient hardware and software can lower energy bills, and virtualization can reduce the need for physical hardware, leading to cost savings.</p>
+<p>By implementing green computing practices, individuals and organizations can contribute to the protection of the environment and the sustainable use of natural resources.</p>
+</div>
+  </div>
+  </div>
+  <br/>
+  <br/>
+      </div>
+
+
+      <script>
+        // Get the slides
+        var slides = document.getElementsByClassName("slide");
+      
+        // Get the dots
+        var dots = document.getElementsByClassName("dot");
+      
+        // Set the current slide index to 0
+        var currentSlide = 0;
+      
+        // Show the first slide
+        slides[currentSlide].style.display = "block";
+      
+        // Set the first dot to active
+        dots[currentSlide].className += " active";
+      
+        // Function to show the next slide
+        function nextSlide() {
+          // Hide the current slide
+          slides[currentSlide].style.display = "none";
+          // Reset the dot for the current slide
+          dots[currentSlide].className = dots[currentSlide].className.replace(" active", "");
+          // Increment the current slide index
+          currentSlide++;
+          // If we've reached the end of the slides, go back to the first one
+          if (currentSlide >= slides.length) {
+            currentSlide = 0;
+          }
+          // Show the next slide
+          slides[currentSlide].style.display = "block";
+          // Set the dot for the next slide to active
+          dots[currentSlide].className += " active";
+        }
+      
+        // Function to show the previous slide
+        function prevSlide() {
+          // Hide the current slide
+          slides[currentSlide].style.display = "none";
+          // Reset the dot for the current slide
+          dots[currentSlide].className = dots[currentSlide].className.replace(" active", "");
+          // Decrement the current slide index
+          currentSlide--;
+          // If we've reached the beginning of the slides, go back to the last one
+          if (currentSlide < 0) {
+            currentSlide = slides.length - 1;
+          }
+          // Show the previous slide
+          slides[currentSlide].style.display = "block";
+          // Set the dot for the previous slide to active
+          dots[currentSlide].className += " active";
+        }
+      
+        // Function to show a specific slide based on the dot clicked
+        function showSlide(n) {
+          // Hide the current slide
+          slides[currentSlide].style.display = "none";
+          // Reset the dot for the current slide
+          dots[currentSlide].className = dots[currentSlide].className.replace(" active", "");
+          // Set the current slide index to the one clicked
+          currentSlide = n;
+          // Show the slide for the dot clicked
+          slides[currentSlide].style.display = "block";
+          // Set the dot for the slide clicked to active
+          dots[currentSlide].className += " active";
+        }
+      </script>
+      
+</body>
+
+
+</html>
